@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicFunctionsFragment"
+    android:id="@+id/ScientificFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#75110F0F">
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button20"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="Sin"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="Cos"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="Tan"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button16"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="ArcSin"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="ArcCos"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="ArcTan"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button12"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="^"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="^2"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="2^"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button8"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="sqrt"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="ln"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="log"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button4"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="Abs"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="Pi"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0F0F0F"
+                android:text="E"
+                android:gravity="fill"
+                android:textColor="#FFEB3B" />
+
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
