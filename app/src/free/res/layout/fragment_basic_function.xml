@@ -110,7 +110,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="4"
                 android:textColor="#FFEB3B" />
 
@@ -120,7 +119,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="5"
                 android:textColor="#FFEB3B" />
 
@@ -130,7 +128,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="6"
                 android:textColor="#FFEB3B" />
 
@@ -140,7 +137,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="*"
                 android:textColor="#FFEB3B" />
         </TableRow>
@@ -154,7 +150,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="1"
                 android:textColor="#FFEB3B" />
 
@@ -164,7 +159,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="2"
                 android:textColor="#FFEB3B" />
 
@@ -174,7 +168,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="3"
                 android:textColor="#FFEB3B" />
 
@@ -184,7 +177,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="-"
                 android:textColor="#FFEB3B" />
         </TableRow>
@@ -198,7 +190,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text=","
                 android:textColor="#FFEB3B" />
 
@@ -208,7 +199,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="0"
                 android:textColor="#FFEB3B" />
 
@@ -218,7 +208,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="="
                 android:textColor="#FFEB3B" />
 
@@ -228,7 +217,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
                 android:gravity="fill"
-                android:onClick="onClick"
                 android:text="+"
                 android:textColor="#FFEB3B" />
         </TableRow>

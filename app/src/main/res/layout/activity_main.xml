@@ -13,8 +13,16 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:textSize="24sp" />
+        android:layout_height="65dp"
+        android:textSize="24sp"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textSize="24sp"
+        android:textAlignment="textEnd"/>
 
     <Button
         android:id="@+id/button21"
