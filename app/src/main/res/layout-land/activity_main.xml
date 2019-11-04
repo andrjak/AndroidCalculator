@@ -19,7 +19,7 @@
 
         <fragment
             android:id="@+id/ScientificFragment"
-            android:name="com.example.androidcalculator.ScientificFunction"
+            android:name="com.example.androidcalculator.ScientificFunctionFragment"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1" />

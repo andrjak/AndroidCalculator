@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class ScientificFunction extends Fragment {
+public class ScientificFunctionFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -18,9 +18,9 @@ public class ScientificFunction extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private ScientificFunction.OnFragmentInteractionListener mListener;
+    private ScientificFunctionFragment.OnFragmentInteractionListener mListener;
 
-    public ScientificFunction() {
+    public ScientificFunctionFragment() {
         // Required empty public constructor
     }
 
@@ -33,8 +33,8 @@ public class ScientificFunction extends Fragment {
      * @return A new instance of fragment BasicFunctionsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ScientificFunction newInstance(String param1, String param2) {
-        ScientificFunction fragment = new ScientificFunction();
+    public static ScientificFunctionFragment newInstance(String param1, String param2) {
+        ScientificFunctionFragment fragment = new ScientificFunctionFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

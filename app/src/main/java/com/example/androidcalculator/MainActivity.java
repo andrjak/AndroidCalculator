@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.SurfaceControl;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     static final String TAG_SCIENTIFIC = "FRAGMENT_SCIENTIFIC";
     static final String TAG_BASIC = "FRAGMENT_BASIC";
-    ScientificFunction scientificFunction;
+    ScientificFunctionFragment scientificFunctionFragment;
     BasicFunctionsFragment basicFunctionsFragment;
     MainActivity activity;
     private FragmentManager fragmentManager;
@@ -64,12 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void ChangeMode(View view)
     {
-        ScientificFunction fragment = (ScientificFunction) fragmentManager.findFragmentByTag(TAG_SCIENTIFIC);
+        ScientificFunctionFragment fragment = (ScientificFunctionFragment) fragmentManager.findFragmentByTag(TAG_SCIENTIFIC);
 
         if (fragment == null) {
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            scientificFunction = new ScientificFunction();
-            fragmentTransaction.replace(R.id.container, scientificFunction, TAG_SCIENTIFIC);
+            scientificFunctionFragment = new ScientificFunctionFragment();
+            fragmentTransaction.replace(R.id.container, scientificFunctionFragment, TAG_SCIENTIFIC);
             fragmentTransaction.commit();
 
         }
