@@ -43,37 +43,37 @@
                 android:textColor="#FFEB3B" />
 
         </TableRow>
-        <TableRow
-            android:layout_height="0dp"
-            android:layout_weight="1">
-            <Button
-                android:id="@+id/ArcSin"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="ArcSin"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--        <TableRow-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1">-->
+<!--            <Button-->
+<!--                android:id="@+id/ArcSin"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="ArcSin"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-            <Button
-                android:id="@+id/ArcCos"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="ArcCos"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--            <Button-->
+<!--                android:id="@+id/ArcCos"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="ArcCos"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-            <Button
-                android:id="@+id/ArcTan"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="ArcTan"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--            <Button-->
+<!--                android:id="@+id/ArcTan"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="ArcTan"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-        </TableRow>
+<!--        </TableRow>-->
         <TableRow
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -136,37 +136,37 @@
                 android:textColor="#FFEB3B" />
 
         </TableRow>
-        <TableRow
-            android:layout_height="0dp"
-            android:layout_weight="1">
-            <Button
-                android:id="@+id/Abs"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="Abs"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--        <TableRow-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1">-->
+<!--            <Button-->
+<!--                android:id="@+id/Abs"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="Abs"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-            <Button
-                android:id="@+id/Pi"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="Pi"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--            <Button-->
+<!--                android:id="@+id/Pi"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="Pi"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-            <Button
-                android:id="@+id/E"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="#0F0F0F"
-                android:text="E"
-                android:gravity="fill"
-                android:textColor="#FFEB3B" />
+<!--            <Button-->
+<!--                android:id="@+id/E"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#0F0F0F"-->
+<!--                android:text="E"-->
+<!--                android:gravity="fill"-->
+<!--                android:textColor="#FFEB3B" />-->
 
-        </TableRow>
+<!--        </TableRow>-->
     </TableLayout>
 
 </FrameLayout>

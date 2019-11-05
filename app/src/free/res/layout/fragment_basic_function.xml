@@ -172,7 +172,7 @@
                 android:textColor="#FFEB3B" />
 
             <Button
-                android:id="@+id/dif"
+                android:id="@+id/sub"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#0F0F0F"
