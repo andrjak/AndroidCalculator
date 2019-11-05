@@ -78,7 +78,23 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
         switch (v.getId())
         {
             case R.id.Sin:
-                if (Solver.operationFlag || text.equals(""))
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        text = updateText(textView.getText(), "sin(");
+                    }
+                    else
+                    {
+                        if (Solver.operationFlag || text.equals(""))
+                            text = updateText(textView.getText(), "sin(");
+                        else
+                        {
+                            text = updateText(textView.getText(), "*sin(");
+                        }
+                    }
+                }
+                else if (Solver.operationFlag || text.equals(""))
                     text = updateText(textView.getText(), "sin(");
                 else
                 {
@@ -90,7 +106,20 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 return;
 
             case R.id.Cos:
-                if (Solver.operationFlag || text.equals(""))
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        text = updateText(textView.getText(), "cos(");
+                    }
+                    else {
+                        if (Solver.operationFlag || text.equals(""))
+                            text = updateText(textView.getText(), "cos(");
+                        else
+                            text = updateText(textView.getText(), "*cos(");
+                    }
+                }
+                else if (Solver.operationFlag || text.equals(""))
                     text = updateText(textView.getText(), "cos(");
                 else
                 {
@@ -102,7 +131,23 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 return;
 
             case R.id.Tan:
-                if (Solver.operationFlag || text.equals(""))
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        text = updateText(textView.getText(), "tan(");
+                    }
+                    else
+                    {
+                        if (Solver.operationFlag || text.equals(""))
+                            text = updateText(textView.getText(), "tan(");
+                        else
+                        {
+                            text = updateText(textView.getText(), "*tan(");
+                        }
+                    }
+                }
+                else if (Solver.operationFlag || text.equals(""))
                     text = updateText(textView.getText(), "tan(");
                 else
                 {
@@ -150,7 +195,23 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
 //                return;
 
             case R.id.log:
-                if (Solver.operationFlag || text.equals(""))
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        text = updateText(textView.getText(), "log10(");
+                    }
+                    else
+                    {
+                        if (Solver.operationFlag || text.equals(""))
+                            text = updateText(textView.getText(), "log10(");
+                        else
+                        {
+                            text = updateText(textView.getText(), "*log10(");
+                        }
+                    }
+                }
+                else if (Solver.operationFlag || text.equals(""))
                     text = updateText(textView.getText(), "log10(");
                 else
                 {
@@ -162,7 +223,23 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 return;
 
             case R.id.ln:
-                if (Solver.operationFlag || text.equals(""))
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        text = updateText(textView.getText(), "ln(");
+                    }
+                    else
+                    {
+                        if (Solver.operationFlag || text.equals(""))
+                            text = updateText(textView.getText(), "ln(");
+                        else
+                        {
+                            text = updateText(textView.getText(), "*ln(");
+                        }
+                    }
+                }
+                else if (Solver.operationFlag || text.equals(""))
                     text = updateText(textView.getText(), "ln(");
                 else
                 {
@@ -186,6 +263,13 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
 //                return;
 
             case R.id.Power:
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        return;
+                    }
+                }
                 if (!Solver.operationFlag && !text.equals(""))
                     text = updateText(textView.getText(), "^");
                 textView.setText(text);
@@ -193,6 +277,13 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 return;
 
             case R.id.Power2:
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        return;
+                    }
+                }
                 if (!Solver.operationFlag && !text.equals(""))
                     text = updateText(textView.getText(), "^2");
                 textView.setText(text);
@@ -200,6 +291,13 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 break;
 
             case R.id.sqrt:
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        return;
+                    }
+                }
                 if (!Solver.operationFlag && !text.equals(""))
                     text = updateText(textView.getText(), "^0.5");
                 textView.setText(text);
@@ -207,6 +305,13 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
                 break;
 
             case R.id.screamer:
+                if (text.length() > 0)
+                {
+                    if (text.toCharArray()[text.length() - 1] == '(')
+                    {
+                        return;
+                    }
+                }
                 if (!Solver.operationFlag && !text.equals(""))
                     text = updateText(textView.getText(), "!");
                 textView.setText(text);
@@ -234,7 +339,7 @@ public class ScientificFunctionFragment extends Fragment implements View.OnClick
 //                textView.setText(text);
 //                Solver.operationFlag = false;
 //                break;
-            
+
             default:
                 return;
         }

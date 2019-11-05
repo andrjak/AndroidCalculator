@@ -86,67 +86,67 @@ public class BasicFunctionsFragment extends Fragment implements View.OnClickList
     {
         TextView textView = getActivity().findViewById(R.id.textView);
         TextView resultTextView = getActivity().findViewById(R.id.resultTextView);
-        String text = textView.getText().toString();
+        StringBuilder text = new StringBuilder(textView.getText().toString());
 
         switch (v.getId())
         {
             case R.id.but0:
-                text = updateText(textView.getText(), "0");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "0"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but1:
-                text = updateText(textView.getText(), "1");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "1"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but2:
-                text = updateText(textView.getText(), "2");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "2"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but3:
-                text = updateText(textView.getText(), "3");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "3"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but4:
-                text = updateText(textView.getText(), "4");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "4"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but5:
-                text = updateText(textView.getText(), "5");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "5"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but6:
-                text = updateText(textView.getText(), "6");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "6"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but7:
-                text = updateText(textView.getText(), "7");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "7"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but8:
-                text = updateText(textView.getText(), "8");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "8"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
             case R.id.but9:
-                text = updateText(textView.getText(), "9");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "9"));
+                textView.setText(text.toString());
                 Solver.operationFlag = false;
                 break;
 
@@ -161,7 +161,7 @@ public class BasicFunctionsFragment extends Fragment implements View.OnClickList
                 int len = text.length();
                 if (len > 0)
                 {
-                    char[] array = text.toCharArray();
+                    char[] array = text.toString().toCharArray();
                     if (array[len - 1] == ')') {
                         Solver.bracketFlag += 1;
                     } else if (array[len - 1] == '(') {
@@ -173,86 +173,86 @@ public class BasicFunctionsFragment extends Fragment implements View.OnClickList
                         else
                             Solver.operationFlag = true;
                     }
-                    text = text.substring(0, len - 1);
-                    textView.setText(text);
+                    text = new StringBuilder(text.substring(0, len - 1));
+                    textView.setText(text.toString());
                 }
-                if (text.equals("")) {
+                if (text.toString().equals("")) {
                     resultTextView.setText("");
                     return;
                 }
                 break;
 
             case R.id.bracket1:
-                if (!Solver.operationFlag && !text.equals(""))
-                    text = updateText(textView.getText(), "*(");
+                if (!Solver.operationFlag && !text.toString().equals(""))
+                    text = new StringBuilder(updateText(textView.getText(), "*("));
                 else
-                    text = updateText(textView.getText(), "(");
-                textView.setText(text);
+                    text = new StringBuilder(updateText(textView.getText(), "("));
+                textView.setText(text.toString());
                 Solver.bracketFlag += 1;
                 return;
 
             case R.id.bracket2:
                 if (Solver.operationFlag || Solver.bracketFlag <= 0)
                     return;
-                text = updateText(textView.getText(), ")");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), ")"));
+                textView.setText(text.toString());
                 Solver.bracketFlag -= 1;
                 return;
 
             case R.id.div:
-                if (Solver.operationFlag || text.equals(""))
+                if (Solver.operationFlag || text.toString().equals(""))
                     return;
-                text = updateText(textView.getText(), "/");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "/"));
+                textView.setText(text.toString());
                 Solver.operationFlag = true;
                 return;
 
             case R.id.mul:
-                if (Solver.operationFlag || text.equals(""))
+                if (Solver.operationFlag || text.toString().equals(""))
                     return;
-                text = updateText(textView.getText(), "*");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "*"));
+                textView.setText(text.toString());
                 Solver.operationFlag = true;
                 return;
 
             case R.id.sub:
-                if (Solver.operationFlag|| text.equals(""))
+                if (Solver.operationFlag)
                     return;
-                text = updateText(textView.getText(), "-");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "-"));
+                textView.setText(text.toString());
                 Solver.operationFlag = true;
                 return;
 
             case R.id.add:
-                if (Solver.operationFlag || text.equals(""))
+                if (Solver.operationFlag)
                     return;
-                text = updateText(textView.getText(), "+");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "+"));
+                textView.setText(text.toString());
                 Solver.operationFlag = true;
                 return;
 
             case R.id.dot:
-                if (Solver.operationFlag || text.equals(""))
+                if (Solver.operationFlag || text.toString().equals(""))
                     return;
-                text = updateText(textView.getText(), ".");
-                textView.setText(text);
+                text = new StringBuilder(updateText(textView.getText(), "."));
+                textView.setText(text.toString());
                 return;
 
             case R.id.result:
-                if (text.equals(""))
+                if (text.toString().equals(""))
                     return;
                 short newBracketFlag = Solver.bracketFlag;
                 while (newBracketFlag > 0)
                 {
-                    text = textView.getText() + ")";
+                    text = new StringBuilder(textView.getText() + ")");
                     newBracketFlag--;
                 }
                 while (newBracketFlag < 0)
                 {
-                    text = "(" + textView.getText();
+                    text = new StringBuilder("(" + textView.getText());
                     newBracketFlag++;
                 }
-                textView.setText(text);
+                textView.setText(text.toString());
 
                 double result = Solver.solve(textView.getText().toString());
                 String answer = isNaN(result) ? "Wrong Expression" : Double.toString(result);
@@ -268,16 +268,16 @@ public class BasicFunctionsFragment extends Fragment implements View.OnClickList
         short newBracketFlag = Solver.bracketFlag;
         while (newBracketFlag > 0)
         {
-            text = textView.getText() + ")";
+            text.append(")");
             newBracketFlag--;
         }
         while (newBracketFlag < 0)
         {
-            text = "(" + textView.getText();
+            text.insert(0, "(");
             newBracketFlag++;
         }
 
-        double result = Solver.solve(text);
+        double result = Solver.solve(text.toString());
         String answer = isNaN(result) ? "Wrong Expression" : Double.toString(result);
         resultTextView.setText(answer);
     }
